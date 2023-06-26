@@ -7,3 +7,31 @@ body {
     overflow-x: hidden; /* corta desplazamiento horizontal */
     background-image: url("../images/photo.png");
 }
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/*  */
+header {
+    padding: 2rem;
+}
+.logo {
+    width: 80px;
+    height: 80px;
+}
+.intro-header {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+@media screen and (min-width: 768px) {
+    header {
+        display: grid;
+        grid-template-columns: repeat(2, 45%);
+        justify-content: space-between;
+        align-content: center;
+    }
+}
+
+/*  */
